@@ -55,7 +55,7 @@ There's quite a couple advanced features for you to use explained below.
 - **Introduction video to bicomplex algebra and its quirks:** [youtube plst url]
 - **Send bug reports here:** [url, find something for this]  
 This is my first ever software, so I can't imagine there won't be quite a bit to fix. There's a channel in the discord server if this link isn't working.  
-- **Community discord:** [url]  
+- **Community discord:** [url](https://discord.gg/UJhuzqyy)  
 Make sure to take screenshots of any pretty visuals you find and post them in here. There's an uncountable amount of them that even I haven't seen. 
 - **Support the project on Patreon:** []  
 Cоnsider suppоrting the prоject's future and оther awesоme prоjects I'll make in the future. I'll never force you tо pay fоr this prоject, but I will аppreciаte every cent. 
@@ -104,30 +104,24 @@ Shift + scroll while hovering over it to shrink or expand the gradient.
 
 **Swap Z and W**: It's a toggle in the bottom left. Self-explanatory. Note that for commutative operations it does nothing. 
 
+## "Can you point me to the features with the most experimentation value?"
+
+**Operations**:  
+W / Z (Output grid axes: Real + j)  
+W ^ Z (Output grid axes: Real + j and Real + i)  
+Z ^ W (Output grid axes: Real + j)  
+Z ^ 2  
+sqrt(Z) (Output grid axes: Real + j)  
+Z ^ Z (Output grid axes: Real + j)  
+sin(Z), cos(Z), tan(Z), and their hyperbolic and arc- variants (Output grid axes: Real + j)  
+Z! (Output grid axes: Real + j)  
+
+But most importantly? Try nesting some operations too. The results will be great.
+
+**Number forms:** Hyperspheric and hyperbolic are the most fun ones. 
+
 ## Number forms: 
 **Change the representation form of Z and W. Bicomplex numbers can be represented in different forms.** 
-
-**Rectangular**: The standard intuitive one.  
-**a**+**b**i+**c**j+**d**ij  
-**Idempotent**: split-complex numbers have 2 special constants called e+ and e-, equal to the value of (1+j)/2 and (1-j)/2. Every split-complex number can be written as a sum of A * e+ and B * e-, where A and B is a real number. Bicomplex numbers have the same exact thing, but A and B are complex. 
-(a+bi)e+ + (c+**d**i)e-
-(the formal algebraic label of A and B is z+ and z-, i used A and B for clarity)
-Polar-idempotent: same as above, but A and B are complex numbers written in the polar form. The polar form representation for complex numbers recontextualizes them as a 2-dimensional vector with a radius and an angle from the real axis:
-r * sgn(θ), 
-where sgn(θ) = e^(iθ) = cos(θ) + i*sin(θ)
-Where r is the radius of that vector and θ (theta) is the complex sign. The real-valued sign can only take values of 1 and -1, but here it allows values like i, -i, 1/2+(sqrt3/2)i and so on. And so, for the polar-idempotent form:
-(r+ * sgn(θ+))e+ + (r- * sgn(θ-))e-
-(normally radius of a complex number cannot be negative, however we don't care what mathematicians think, because inputting a negative radius into the conversion formula provides a valid result)
-Hyperspheric: 
-Remember how I mentioned vectors? Well, you can literally represent a bicomplex number as if they were a coordinate on a 4-dimensional sphere. Circles require 1 angle, spheres require 2, and hyperspheres require 3. So the first number is the radius, the rest of the 3 are angles.
-The exact formula is quite bulky, but there's the radius r and the angles α, β, γ. 
-Hyperbolic: remember the Euler's formula? (e^(iθ) = cos(θ) + i*sin(θ)) There's a Euler's formula for split-complex numbers too:
-e^(jϕ) = cosh(ϕ) + j*sinh(ϕ)
-Just like polar form, this allows a hyperbolic representation form of split-complex numbers:
-ρ * e ^ (jϕ) = ρ * (cosh(ϕ) + ρ * sinh(ϕ))
-However, we can make ρ and ϕ complex. Giving us: 
-(Re(ρ) + Imag(ρ)) * e ^ (j(ϕ + θ))
-(the ϕ here is not the same ϕ as above. The reason i used same variable label for different variables is because ϕ is the hyperbolic rotation variable and θ is the circular rotation variable)
 
 **Rectangular**: The standard intuitive one.    
 
@@ -162,28 +156,12 @@ Just like polar form, this allows a hyperbolic representation form of split-comp
 ρ * e^(jϕ) = ρ * (cosh(ϕ) + j*sinh(ϕ))  
 However, we can make ρ and ϕ complex. Giving us:  
 
-(Re(**ρ**) + i·Im(**ρ**)) * e^(j(**ϕ** + **θ**))  
+(Re(**ρ**) + i·Im(**ρ**)) * e^(j(**ϕ** + i·**θ**))  
 
 (the **ϕ** here is not the same ϕ as above. The reason i used the same variable label for different variables is because **ϕ** is the hyperbolic rotation variable and **θ** is the circular rotation variable)  
 
 **Warning:** you can input negative radius in the two polar forms. While it's avoided by mathematicians generally because it creates 2 representations for the same number, we really don't care in this house what some mathematicians think.  
 A negative radius doesn't actually break anything, as inputting a negative radius into the conversion formula provides a perfectly valid result. 
-
-## "Can you point me to the features with the most experimentation value?"
-
-**Operations**:  
-W / Z (Output grid axes: Real + j)  
-W ^ Z (Output grid axes: Real + j and Real + i)  
-Z ^ W (Output grid axes: Real + j)  
-Z ^ 2  
-sqrt(Z) (Output grid axes: Real + j)  
-Z ^ Z (Output grid axes: Real + j)  
-sin(Z), cos(Z), tan(Z), and their hyperbolic and arc- variants (Output grid axes: Real + j)  
-Z! (Output grid axes: Real + j)  
-
-But most importantly? Try nesting some operations too. The results will be great.
-
-**Number forms:** Hyperspheric and hyperbolic are the most fun ones. 
 
 ## Advanced features
 
