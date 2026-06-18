@@ -47,17 +47,17 @@ There's quite a couple advanced features for you to use explained below.
 
 ## Download
 
-- **Downloads:** [url]
+- **Downloads:** [https://github.com/starphene/bicomplex-visual-calculator/releases]
 
 ## Links
 
-- **Videos about the program:** [youtube plst url]
-- **Introduction video to bicomplex algebra and its quirks:** [youtube plst url]
-- **Send bug reports here:** [url, find something for this]  
+- **Videos about the program:** []
+- **Introduction video to bicomplex algebra and its quirks:** []
+- **Send bug reports here:** [https://github.com/starphene/bicomplex-visual-calculator/issues]
 This is my first ever software, so I can't imagine there won't be quite a bit to fix. There's a channel in the discord server if this link isn't working.  
-- **Community discord:** [url](https://discord.gg/UJhuzqyy)  
+- **Community discord:** [https://discord.gg/UJhuzqyy]  
 Make sure to take screenshots of any pretty visuals you find and post them in here. There's an uncountable amount of them that even I haven't seen. 
-- **Support the project on Patreon:** []  
+- **Support the project on Patreon:** [https://www.patreon.com/c/Starphene]  
 Cоnsider suppоrting the prоject's future and оther awesоme prоjects I'll make in the future. I'll never force you tо pay fоr this prоject, but I will аppreciаte every cent. 
 
 ## Basic features
@@ -87,7 +87,7 @@ You can only swap axes between "Input Z" input grid & output grids and "Input W"
 "To Z" applies an operation to Z before the main operation.  
 "To W" applies an operation to W before the main operation.  
 "To operation result" applies an operation to the result of the main operation.  
-For example, if the chosen operations are, in order: "sin(Z), cos(Z), Z^W, tan(Z)", then the program interprets this as instructions to calculate tan(sin(Z)^cos(W)).
+For example, if the chosen operations are, in order: "sin(Z), cos(Z), Z ^ W, tan(Z)", then the program interprets this as instructions to calculate tan(sin(Z) ^ cos(W)).
 
 **Input grid**: left click a cell to change the value it affects. You can hold left click to continuously change that value.
 
@@ -123,37 +123,40 @@ But most importantly? Try nesting some operations too. The results will be great
 ## Number forms: 
 **Change the representation form of Z and W. Bicomplex numbers can be represented in different forms.** 
 
-**Rectangular**: The standard intuitive one.    
+**Rectangular**:  
+The standard intuitive one.    
 
 **a**+**b**⋅i+**c**⋅j+**d**⋅ij   
 
-**Idempotent**: split-complex numbers have 2 special constants called e+ and e-, equal to the value of (1 + j) / 2 and (1 - j) / 2. They have a special property of returning themselves when taken to any positive real power.  
+**Idempotent**:  
+Split-complex numbers have 2 special constants called e+ and e-, equal to the value of (1 + j) / 2 and (1 - j) / 2. They have a special property of returning themselves when taken to any positive real power.  
 Every split-complex number can be written as a sum of A * e+ and B * e-, where A and B are real numbers. Bicomplex numbers have the same exact thing, but A and B are complex.  
 
 (**a** + **b**⋅i)⋅e+ + (**c** + **d**⋅i)⋅e-    
 
 (the formal algebraic label of A and B is z+ and z-, i used A and B for clarity)  
 
-**Polar-idempotent**: same as above, but A and B are complex numbers written in the polar form. The polar form representation for complex numbers recontextualizes them as a 2-dimensional vector with a radius and an angle from the real axis:  
-**r** * sgn(**θ**), sgn(θ) = e^(iθ) = cos(θ) + i*sin(θ)    
+**Polar-idempotent**:   
+Same as above, but A and B are complex numbers written in the polar form. The polar form representation for complex numbers recontextualizes them as a 2-dimensional vector with a radius and an angle from the real axis:  
+**r** ⋅ sgn(**θ**), sgn(θ) = e^(iθ) = cos(θ) + i⋅sin(θ)    
 Where r is the radius of that vector and θ (theta) is the complex sign. The real-valued sign can only take values of 1 and -1, but here it allows values like i, -i, 1/2+(sqrt3/2)i and so on. And so, for the polar-idempotent form:  
 
-(**r+** * sgn(**θ+**))e+ + (**r-** * sgn(**θ-**))e-
+(**r+** ⋅ sgn(**θ+**))⋅e+ + (**r-** ⋅ sgn(**θ-**))⋅e-
 
 (normally radius of a complex number cannot be negative, however we don't care what mathematicians think, because inputting a negative radius into the conversion formula provides a valid result)
 
-**Hyperspheric**:
-
+**Hyperspheric**:  
 Remember how I mentioned vectors? Well, you can literally represent a bicomplex number as if it were a coordinate on a 4-dimensional sphere.  
 Circles require 1 angle, spheres require 2, and hyperspheres require 3. So the first number is the radius, the remaining 3 are angles.  
 
 The exact formula is quite bulky, but there's the radius **r** and the angles **α**, **β**, **γ**.
 
-**Hyperbolic**: remember Euler's formula? (e^(iθ) = cos(θ) + i*sin(θ))  
+**Hyperbolic**:   
+Remember Euler's formula? (e^(iθ) = cos(θ) + i⋅sin(θ))  
 There's a Euler's formula for split-complex numbers too:  
-e^(jϕ) = cosh(ϕ) + j*sinh(ϕ)  
+e^(jϕ) = cosh(ϕ) + j⋅sinh(ϕ)  
 Just like polar form, this allows a hyperbolic representation form of split-complex numbers:  
-ρ * e^(jϕ) = ρ * (cosh(ϕ) + j*sinh(ϕ))  
+ρ ⋅ e^(jϕ) = ρ ⋅ (cosh(ϕ) + j⋅sinh(ϕ))  
 However, we can make ρ and ϕ complex. Giving us:  
 
 (Re(**ρ**) + i·Im(**ρ**)) * e^(j(**ϕ** + i·**θ**))  
@@ -178,11 +181,11 @@ A negative radius doesn't actually break anything, as inputting a negative radiu
 **Z * W**  
 **W / Z**  
 **Z ^ W** (Z to the power of W)  
-**Z ^ 1 / W** (take Z to the power of 1/W, or take W-th root of Z)  
+**Z ^ 1 / W** (take Z to the power of 1 / W, or take W-th root of Z)  
 **log_W(Z)** (take W-th log of Z)  
 **ln(Z)** (natural log of Z)  
 **e ^ Z**   
-**AbsEachAxis(Z)** (take the absolute value of each individual axis coefficient. (for example, [-2, 3,-1, 0] turns to [2,3,1,0]))  
+**AbsEachAxis(Z)** (take the absolute value of each individual axis coefficient. (for example, [-2, 3,-1, 0] turns to [2, 3, 1, 0]))  
 **-AbsEachAxis(Z)**  
 **Z + W**  
 **1 / Z**  
@@ -199,12 +202,12 @@ A negative radius doesn't actually break anything, as inputting a negative radiu
 **sinh(Z)** (hyperbolic sine of Z)  
 **cosh(Z)**  
 **tanh(Z)**  
-**Z!** (factorial of Z (or more precisely Г(Z+1)))  
-**Zeta(Z)** (infinite sum of 1/(n^Z) from n to infinity)  
-**eta(Z)** (same as zeta but each second member is )  
+**Z!** (factorial of Z (or more precisely Г(Z + 1)))  
+**Zeta(Z)** (infinite sum of 1/(n ^ Z) from n to infinity)  
+**eta(Z)** (same as zeta but each second member of the infinite sum is negative)  
 **Fibonacci(Z)**   
 **LambertW(Z)** (solution to xe^x=Z)  
-**arcsin(Z)** (arcsine of Z, or solution to sin(x)=Z)  
+**arcsin(Z)** (arcsine of Z, or solution to sin(x) = Z)  
 **arccos(Z)**  
 **arctan(Z)**  
 **arcsinh(Z)**  
@@ -261,8 +264,3 @@ Inverting this will make it so after converting the number, the program will mis
 ## Shameless social media plug 
 
 []
-
-## Credits
-
-[license]
-[credits]
