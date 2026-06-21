@@ -4,6 +4,12 @@
 
 ### Enables a more visual, accessible approach to complex algebras.
 
+## Download
+
+- **Downloads:** [https://github.com/starphene/bicomplex-visual-calculator/releases]
+- **Web Version:** [https://starphene.github.io/bicomplex-visual-calculator/]  
+(web version has a few text bugs which are yet to be fixed, don't mind them, it works just as well otherwise)
+
 ## Overview 
 
 This is a tool which allows visualization of bicomplex numbers in a millions of differently customizable ways. There are no rules.   
@@ -45,14 +51,11 @@ There also doesn't need to be a value of W at all. You can visualize sin(Z) just
 
 There's quite a couple advanced features for you to use explained below. 
 
-## Download
-
-- **Downloads:** [https://github.com/starphene/bicomplex-visual-calculator/releases]
 
 ## Links
 
-- **Videos about the program:** []
-- **Introduction video to bicomplex algebra and its quirks:** []
+- **Videos about the program:** [https://www.youtube.com/watch?v=Pu5frJWy5xE&list=PLbn5-wrLENY7DNHTkhB4yfCZofdl54a2f]
+- **Introduction video to bicomplex algebra and its quirks:** [https://youtu.be/Pu5frJWy5xE]
 - **Send bug reports here:** [https://github.com/starphene/bicomplex-visual-calculator/issues]
 This is my first ever software, so I can't imagine there won't be quite a bit to fix. There's a channel in the discord server if this link isn't working.  
 - **Community discord:** [https://discord.gg/UJhuzqyy]  
@@ -100,6 +103,8 @@ Click to the left of either label to swap colors used at each threshold.
 **Altering rainbow color scheme**: UI element only appears when there's a grid in rainbow mode. Scroll while hovering over it to shift the gradient upwards or downwards.  
 Shift + scroll while hovering over it to shrink or expand the gradient. 
 
+**Mirror Z onto W**: It's a toggle in the bottom left. Assigns the value of Z to W, allowing to calculate operations like sin(Z)*cos(Z) by selecting multiplication as the main operation and applying sin and cos to Z and W before entering the main operation.  
+
 **Show grid arrows**: It's a toggle in the bottom left. Self-explanatory. 
 
 **Swap Z and W**: It's a toggle in the bottom left. Self-explanatory. Note that for commutative operations it does nothing. 
@@ -116,7 +121,8 @@ Z ^ Z (Output grid axes: Real + j)
 sin(Z), cos(Z), tan(Z), and their hyperbolic and arc- variants (Output grid axes: Real + j)  
 Z! (Output grid axes: Real + j)  
 
-But most importantly? Try nesting some operations too. The results will be great.
+But most importantly? Try nesting some operations too. The results will be great.  
+"Mirror Z into W" in combination with nesting operations can also be huge.
 
 **Number forms:** Hyperspheric and hyperbolic are the most fun ones. 
 
@@ -263,4 +269,4 @@ Inverting this will make it so after converting the number, the program will mis
 
 ## Shameless social media plug 
 
-[]
+Youtube channel: [https://www.youtube.com/@Starphene]
