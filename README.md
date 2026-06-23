@@ -14,7 +14,7 @@
 
 This is a tool which allows visualization of bicomplex numbers in a millions of differently customizable ways. There are no rules.   
 The intended usage is for you to change random things without having any idea what you're doing and enjoy the results.   
-No math knowledge or brain required. There's an almost nonexistent skill floor. Just rest random operations together and adjust the visuals to your liking.   
+No math knowledge or brain required. There's an almost nonexistent skill floor. Just test random operations together and adjust the visuals to your liking.   
 You define an operation to apply, define the one or two variables to apply that operation to, and enjoy the result, or modify its visuals to your content.   
 
 For a simple explanation, what happens if we take a 5x5 grid of gaussian integers from -2-2i to 2+2i and visualize it in a beautiful way? 
@@ -58,7 +58,7 @@ There's quite a couple advanced features for you to use explained below.
 - **Introduction video to bicomplex algebra and its quirks:** [https://youtu.be/Pu5frJWy5xE]
 - **Send bug reports here:** [https://github.com/starphene/bicomplex-visual-calculator/issues]
 This is my first ever software, so I can't imagine there won't be quite a bit to fix. There's a channel in the discord server if this link isn't working.  
-- **Community discord:** [https://discord.gg/UJhuzqyy]  
+- **Community discord:** [https://discord.gg/ZUuN7whaQ3]  
 Make sure to take screenshots of any pretty visuals you find and post them in here. There's an uncountable amount of them that even I haven't seen. 
 - **Support the project on Patreon:** [https://www.patreon.com/c/Starphene]  
 Cоnsider suppоrting the prоject's future and оther awesоme prоjects I'll make in the future. I'll never force you tо pay fоr this prоject, but I will аppreciаte every cent. 
